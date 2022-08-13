@@ -1,0 +1,72 @@
+*{box-sizing: border-box;}
+body{ margin: 0%;}
+h1{font: size 2rem;text-align: center;}
+img{width: 120px; height: 100px;}
+a{color: white; font-size: 1.5rem; text-decoration: none;}
+.navbar{background-color: green; padding: 1% 7%;text-align: center;}
+[class*="col-"]{float: left; padding: 10px;}
+[class*="col-"]{width: 100%;}
+.navbar::after{ content:"" ; display: table; clear: both;}
+.navbar h1{ color: blue; margin: 0; padding: 10px;}
+.navbar-menu{ display: flex; flex-direction:column;text-transform: uppercase;}
+.navbar-menu a{ background-color: blueviolet; border-radius:4px; margin: 7px 10px; padding: 10px;}
+.navbar-menu a:hover{background-color: darkmagenta;}
+p{font-size: 1.2rem;text-align: justify;}
+.profile{padding: 130px 10px;position:relative;}
+.profile .top-weather-icon{ position: absolute; right: 60px;top: 20px;transition:transform 2s;}
+.profile .top-weather-icon:hover{transform: rotate(360deg);}
+.profile-desc p{ color: rgb(0, 255, 55);text-align: center; margin:0 auto 20px auto ;}
+.profile .bottom-weather-icon{position: absolute;left: 120px;transition:transform 2s ;}
+.profile .bottom-weather-icon:hover {transform: rotate(360deg);}
+/*about start*/
+h2{font-size: 1.5rem;text-align: center;}
+.about-me{background-color: blueviolet;padding:1% 7%;color: aliceblue; text-align: center;}
+.about-me::after{clear: both;display: table;content: "";}
+.dotted-hr{border: dotted 6px chocolate; border-bottom: none;width: 60px;}
+.about-me-image img{border: 5px solid white; border-radius: 50%;height:220px; width: 170px;}
+.about-me p{ text-align: center;}
+.about-me a{font-size: 1.5rem;}
+.cv-botton{background-color: rgb(19, 218, 99);color: rgb(195, 29, 120);text-align: center;padding: 10px;}
+/*professional start*/
+
+.professional-experience::after{clear: both;display: table;content: "";}
+.professional-experience::after{clear: both;display: table;content: "";}
+.professional-experience{ padding: 1% 0;}
+.professional-experience .card{background-color: rgb(173, 122, 55);border-radius: 5px;padding: 10px ;transition: 0.3s; height: 500px;
+}
+.professional-experience .card:hover{ box-shadow: 0 4px 8px 5px black;}
+.card-icon{ text-align: center;}
+.card-icon img{ margin-top: 20px;width:100px ;}
+.rounded-img{border: 5px solid white;border-radius: 50%;
+
+}
+.card-title h2{ background-color: bisque;color: aqua;padding: 10px; text-align: center;}
+/*skill start*/
+.skill-container{padding-right: 45px;}
+.skill-container li{list-style: none;font-weight: bolder;margin: 30px 10px;position: relative;text-transform: uppercase;}
+.skill-container li::before{content: "";position: absolute;background-color: rgb(115, 95, 134);width:100%; height: 10px;top:30px ;left: 0;border-radius: 1000px;}
+.skill-container li::after{content: "";position: absolute;background-color: rgb(122, 19, 218);width:0; height: 10px;top:30px;left: 0;border-radius: 1000px; animation-duration: 3s;animation-delay: 2s; animation-timing-function: linear;animation-fill-mode:forwards;animation-iteration-count: infinite;}
+.skill-container li.html::after{animation-name: html;}
+@keyframes html{ to{width:90%;}}
+.skill-container li.css::after{animation-name: css;}
+@keyframes css{ to{width:65%}}
+.professional-experience::after{clear: both;display: table; content: "";}
+/*achievement*/
+.achievement-contact{ padding:1% 7% ; background-color: rgb(100, 0, 18);color:white;}
+.achievement-contact::after{clear: both;display: table;content: "";}
+/*contact*/
+.contact{text-align: center;}
+.contact input,textarea{width:100%;padding:10px ;text-align: center;}
+.contact button{border: none;border-radius: 12px;background-color: blueviolet;cursor: pointer;padding: 10px;margin: 10px;width:30%;}
+    .contact-link::after{ clear: both;display: table;content: "";}
+    /*more contact start*/
+
+    .contact-link{ text-align: center;position: relative;}
+    .media-button .btn{ border: none; border-radius: 50px;cursor: pointer;font-size: 32px;padding: 5px;margin: 10px;width: 30%;}
+    .btn:hover{color: coral;}
+    /*footer*/
+    .footer::after{clear: both;display: table;content: "";}
+    .footer-menu a{ display: block;margin: 15px 0;font-size: 1rem;text-align: center;color: black; border-radius: 50%;}
+    .footer{background-color: chartreuse;}
+    .footer-menu a:hover{color-scheme: rgb(176, 14, 14);}
+    .footer-desc{text-align: center;}
